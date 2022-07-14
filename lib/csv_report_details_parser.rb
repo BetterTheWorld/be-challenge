@@ -1,4 +1,4 @@
-class JsonReportDetailsParser
+class CsvReportDetailsParser
   def initialize(report, report_details)
     @report = report
     @report_details = report_details
@@ -6,7 +6,7 @@ class JsonReportDetailsParser
   end
 
   def parse
-    json_file.each do |transaction|
+    csv_file.each do |transaction|
       @transactions << map_transaction(transaction)
     end
 
@@ -17,8 +17,8 @@ class JsonReportDetailsParser
 
   def map_transaction(transaction)
     {
-      intent_id: transaction['account']['referrence_id'],
-      value_in_cents: transaction['value'] * 100,
+      intent_id: transaction['account_external_ref'],
+      value_in_cents: transaction['value'].to_i,
       status: map_status(transaction['status']),
       paid_at: Time.parse(transaction['paid_at']),
       external_id: transaction['id'],
@@ -35,7 +35,7 @@ class JsonReportDetailsParser
     end
   end
 
-  def json_file
-    @json_file ||= JSON.parse(@report_details)
+  def csv_file
+    @csv_file ||= CSV.parse(@report_details, headers: true)
   end
 end

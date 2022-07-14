@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe ReportDetailsParserFactory do
-  describe '#build' do
+  describe '.build' do
     let(:report) do
       {
         'id' => 7654,

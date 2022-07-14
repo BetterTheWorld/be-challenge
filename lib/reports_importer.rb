@@ -1,7 +1,7 @@
 class ReportsImporter
   JWT_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.OMK7-WIm6xwEM1inhy7MakzQCr95RVO0eWCmo3FpYww"
 
-  def import
+  def import!
     reports = api_client.list_reports
 
     reports.each do |report|

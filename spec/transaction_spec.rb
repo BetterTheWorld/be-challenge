@@ -1,11 +1,7 @@
-ENV['APP_ENV'] = 'test'
-
-require './models/transaction'
-
-require 'rspec'
+require 'spec_helper'
 
 RSpec.describe 'Transaction' do
-  after(:all) { Transaction.destroy_all}
+  after(:all) { Transaction.destroy_all }
 
   it "db validations" do
     transaction = Transaction.new transaction_params

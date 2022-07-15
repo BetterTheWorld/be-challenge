@@ -20,6 +20,6 @@ class ReportsImporter
   private
 
   def api_client
-    @api_client ||= ApiClient.new(JWT_TOKEN)
+    @api_client ||= ApiClient.new
   end
 end

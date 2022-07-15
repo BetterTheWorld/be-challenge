@@ -6,19 +6,16 @@ RSpec.describe ReportsImporter do
   describe '#import!' do
     context 'when requests are sucessful' do
       let(:report_id) { reports.first['report_id'] }
-      let(:list_reports_response) { instance_double(HTTParty::Response, body: reports.to_json, code: 200) }
-      let(:get_report_response) { instance_double(HTTParty::Response, body: report_details.to_json, code: 200) }
 
       it 'import transactions in the database' do
-        expect(HTTParty)
-          .to receive(:get)
-          .with('https://be-challenge-api.herokuapp.com/reports', headers: {'Authorization' => "Bearer #{ReportsImporter::JWT_TOKEN}"})
-          .and_return(list_reports_response)
+        expect_any_instance_of(ApiClient)
+          .to receive(:list_reports)
+          .and_return(reports)
 
-        expect(HTTParty)
-          .to receive(:get)
-          .with("https://be-challenge-api.herokuapp.com/reports/#{report_id}", headers: {'Authorization' => "Bearer #{ReportsImporter::JWT_TOKEN}"})
-          .and_return(get_report_response)
+        expect_any_instance_of(ApiClient)
+          .to receive(:get_report)
+          .with(report_id)
+          .and_return(report_details.to_json)
 
         expect {
           importer.import!
@@ -26,18 +23,15 @@ RSpec.describe ReportsImporter do
       end
     end
 
-    context 'when authentication fails' do
-      let(:list_reports_response) { instance_double(HTTParty::Response, code: 403, body: "'All other information on your level is restricted'(Forbidden)") }
-
+    context 'when api client returns error' do
       it 'returns JSON file when successful' do
-        expect(HTTParty)
-          .to receive(:get)
-          .with('https://be-challenge-api.herokuapp.com/reports', headers: {'Authorization' => "Bearer #{ReportsImporter::JWT_TOKEN}"})
-          .and_return(list_reports_response)
+        expect_any_instance_of(ApiClient)
+          .to receive(:list_reports)
+          .and_raise(ApiClient::UnexpectedError.new('Unexpected error'))
 
         expect {
           importer.import!
-        }.to raise_error(ApiClient::ApiClientError, /\'All other information on your level is restricted\'\(Forbidden\)/)
+        }.to raise_error(ApiClient::UnexpectedError, /Unexpected error/)
       end
     end
   end

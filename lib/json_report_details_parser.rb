@@ -23,7 +23,7 @@ class JsonReportDetailsParser
       paid_at: Time.parse(transaction['paid_at']),
       external_id: transaction['id'],
       currency: @report['symbol']
-  	}
+    }
   end
 
   def map_status(original_status)

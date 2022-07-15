@@ -7,6 +7,8 @@ gem "rake"  # so we can run Rake tasks
 gem 'rack-test'
 gem 'rspec'
 gem "byebug"
+gem 'httparty'
+gem 'csv'
 
 group :production do
   # Use Postgresql for ActiveRecord

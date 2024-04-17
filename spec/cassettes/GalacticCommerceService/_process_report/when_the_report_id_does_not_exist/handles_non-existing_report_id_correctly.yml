@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/register
+    body:
+      encoding: UTF-8
+      string: email=armando23%40example.com&password=P%40%24%24word123
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - ddb3710b4731f674e48b69d259ea4e36
+      Date:
+      - Wed, 17 Apr 2024 20:24:01 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '95'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozfQ.geFux4D4EXZv6yqNLibgPTe4msXLd0RXVQoeAkKyWDw"}'
+  recorded_at: Wed, 17 Apr 2024 20:24:01 GMT
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/invalid_report_id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozfQ.geFux4D4EXZv6yqNLibgPTe4msXLd0RXVQoeAkKyWDw
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cloud-Trace-Context:
+      - 1eba471c8ac231884b601fac00b01653
+      Date:
+      - Wed, 17 Apr 2024 20:24:01 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '56'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "'Who is this? Whats your operating number?' (Not Found)\n"
+  recorded_at: Wed, 17 Apr 2024 20:24:01 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/register
+    body:
+      encoding: UTF-8
+      string: email=armando2%40example.com&password=P%40%24%24word123
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - '029bf5d124d400739fe1e9e859d07c0d;o=1'
+      Date:
+      - Wed, 17 Apr 2024 18:27:23 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '95'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.ETUYUOkmfnWsWIvA8iBOkE2s1ZQ0V_zgnG_c4QRrhbg"}'
+  recorded_at: Wed, 17 Apr 2024 18:27:23 GMT
+- request:
+    method: post
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/login
+    body:
+      encoding: UTF-8
+      string: email=armando2%40example.com&password=P%40%24%24word123
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - 6190892608b22efef659f84cd7a34cc2
+      Date:
+      - Wed, 17 Apr 2024 18:27:24 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '95'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.ETUYUOkmfnWsWIvA8iBOkE2s1ZQ0V_zgnG_c4QRrhbg"}'
+  recorded_at: Wed, 17 Apr 2024 18:27:24 GMT
+recorded_with: VCR 6.2.0

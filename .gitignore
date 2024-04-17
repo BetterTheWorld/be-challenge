@@ -1,4 +1,7 @@
 development.sqlite3
+development.sqlite3-shm
+development.sqlite3-wal
 test.sqlite3
 test.sqlite3-shm
 test.sqlite3-wal
+.byebug_history

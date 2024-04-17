@@ -3,6 +3,7 @@ require 'sinatra/base'
 require 'sinatra/json'
 require 'sinatra/activerecord'
 require 'byebug'
+require 'httparty'
 
 set :database_file, '../config/database.yml'
 

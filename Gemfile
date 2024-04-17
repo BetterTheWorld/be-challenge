@@ -7,6 +7,7 @@ gem "rake"  # so we can run Rake tasks
 gem 'rack-test'
 gem 'rspec'
 gem "byebug"
+gem 'httparty', '~> 0.13.7'
 
 group :production do
   # Use Postgresql for ActiveRecord
@@ -16,4 +17,5 @@ end
 group :development, :test do
   # Use SQLite for ActiveRecord
   gem 'sqlite3'
+  gem 'pry'
 end

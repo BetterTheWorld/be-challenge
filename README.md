@@ -26,3 +26,43 @@
 
 ### Notes
 - Intent: An intent is a user initiated interaction with shopping, similar to viewing a product but not yet adding it to cart. The intent's is what is passed to the vendors to track that the shopping 'trip', and any resulting transactions, came form FlipGive.
+
+
+
+
+### Developmnet Notes:
+
+Start a console 
+
+`bundle exec irb -r ./app.rb`
+
+Create a User :
+
+```
+response = HTTParty.post('https://be-challenge-uqjcnl577q-pd.a.run.app/register', body: "{\"email\":\"ernesto_alcaraz12@gmail.com\",\"password\":\"test1234\"}", headers: { 'Content-Type' => 'application/json' })
+response.parsed_response
+```
+
+Log In 
+
+``` 
+response = HTTParty.post('https://be-challenge-uqjcnl577q-pd.a.run.app/login', body: "{\"email\":\"ernesto_alcaraz12@gmail.com\",\"password\":\"test1234\"}", headers: { 'Content-Type' => 'application/json' })
+response.parsed_response
+token = response.parsed_response['token']
+```
+
+Get Reports:
+
+```
+response = HTTParty.get('https://be-challenge-uqjcnl577q-pd.a.run.app/reports', headers: { 'Authorization' => "#{token}" })
+response.parsed_response
+
+report_id = response.parsed_response.first['report_id']
+```
+
+Get Reports By Id
+
+```
+response = HTTParty.get("https://be-challenge-uqjcnl577q-pd.a.run.app/reports/#{report_id}", headers: { 'Authorization' => "#{token}" })
+response.parsed_response
+```

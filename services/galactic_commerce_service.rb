@@ -71,19 +71,4 @@ class GalacticCommerceService
     
     raise "Unsupported content type"
   end
-
-  # content_type is unreliable
-  #
-  # def select_processor(content_type)
-  #   case content_type
-  #   when /json/
-  #     JsonProcessor.new
-  #   when /xml/
-  #     XmlProcessor.new
-  #   when /csv/
-  #     CsvProcessor.new 
-  #   else
-  #     raise "Unsupported content type: #{content_type}"
-  #   end
-  # ends
 end

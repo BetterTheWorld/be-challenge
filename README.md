@@ -14,7 +14,9 @@
 2. create a branch with your name
 3. Run `bundle install`
 4. Run `rake db:create` and `rake db:migrate RACK_ENV=test`
+    - run `bundle exec rake db:create` and `bundle exec rake db:migrate RACK_ENV=test` to avoid gem conflicts. 
 5. Run `rake spec` and ensure there are no failing tests.
+    - Run `bundle exec rake spec` , same as above.
 6. Create a commit with the message "Start time"
 7. Visit [https://be-challenge-uqjcnl577q-pd.a.run.app/](https://be-challenge-uqjcnl577q-pd.a.run.app/)
 8. Follow the on screen instructions to create a user, receive a token and connect to the API.

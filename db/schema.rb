@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_04_175228) do
-
+ActiveRecord::Schema[7.1].define(version: 2020_04_04_175228) do
   create_table "transactions", id: :string, force: :cascade do |t|
     t.string "intent_id", null: false
     t.string "external_id"
@@ -19,8 +18,8 @@ ActiveRecord::Schema.define(version: 2020_04_04_175228) do
     t.string "currency", null: false
     t.datetime "paid_at"
     t.string "status", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["external_id"], name: "index_transactions_on_external_id", unique: true
   end
 

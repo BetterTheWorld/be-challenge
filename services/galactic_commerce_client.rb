@@ -1,88 +1,58 @@
 require 'active_support/core_ext/hash/conversions'
+require 'pry'
 
 class GalacticCommerceClient
   include HTTParty
 
   def initialize
-    @base_uri = "https://be-challenge-uqjcnl577q-pd.a.run.app"
+    @base_uri = 'https://be-challenge-uqjcnl577q-pd.a.run.app'
   end
 
   def self.instance
-    new # This will initialize the client
+    new
   end
 
   def register(email, password)
-    response = post_register(email, password)
-
-    return handle_errors(response) unless response.success?
-
-    convert_response(response)
+    handle_response(post_request('/register', email: email, password: password))
   end
 
   def login(email, password)
-    response = post_login(email, password)
-
-    return handle_errors(response) unless response.success?
-
-    convert_response(response)
+    handle_response(post_request('/login', email: email, password: password))
   end
 
   def get_reports(token)
-    response = get_reports_request(token)
-
-    return handle_errors(response) unless response.success?
-
-    response.parsed_response # Return the parsed response
+    handle_response(get_request('/reports', token))
   end
 
   def get_report_by_id(report_id, token)
-    response = get_report_by_id_request(report_id, token)
-
-    return handle_errors(response) unless response.success?
-
-    handle_response(response)
+    handle_response(get_request("/reports/#{report_id}", token))
   end
 
   private
 
   attr_reader :base_uri
 
-  def post_register(email, password)
-    self.class.post("#{base_uri}/register",
-                    query: { email: email, password: password })
+  def post_request(endpoint, params)
+    self.class.post("#{base_uri}#{endpoint}", query: params)
   end
 
-  def post_login(email, password)
-    self.class.post("#{base_uri}/login",
-                    query: { email: email, password: password })
-  end
-
-  def get_reports_request(token)
-   self.class.get("#{base_uri}/reports",
-                  headers: { "Authorization" => "Bearer #{token}" })
- end
-
- def get_report_by_id_request(report_id, token)
-    self.class.get("#{base_uri}/reports/#{report_id}",
-                   headers: { "Authorization" => "Bearer #{token}" })
-  end
-
-  def convert_response(response)
-    OpenStruct.new(
-      token: response["token"]
-    )
+  def get_request(endpoint, token)
+    self.class.get("#{base_uri}#{endpoint}", headers: { 'Authorization' => "Bearer #{token}" })
   end
 
   def handle_response(response)
-    raise StandardError, response.message unless response.success?
+    return OpenStruct.new(message: response.body, code: response.code) unless response.success?
 
     content_type = response.headers['content-type']
-    case
-    when content_type.include?("json")
+
+    if response.parsed_response.is_a?(Hash) && response.key?('token')
+      OpenStruct.new(token: response['token'])
+    elsif content_type.include?('json')
+      # could be reports or single report_id
       JSON.parse(response.body)
-    when content_type.include?("charset=utf-8") && is_csv?(response.body)
+    elsif content_type.include?('charset=utf-8') && is_csv?(response.body)
       CSV.parse(response.body, headers: true).map(&:to_h)
-    when content_type.include?("charset=utf-8") && !is_csv?(response.body)
+    elsif content_type.include?('charset=utf-8') && !is_csv?(response.body)
       Hash.from_xml(response.body)
     else
       raise StandardError, "Unsupported content type: #{response.headers['content-type']}"
@@ -93,12 +63,5 @@ class GalacticCommerceClient
     CSV.parse(body).present?
   rescue CSV::MalformedCSVError
     false
-  end
-
-  def handle_errors(response)
-    OpenStruct.new(
-      message: response.body,
-      code: response.code
-    )
   end
 end

@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/login?email=dummy9@lms.com&password=Taco1234
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - b0e30195c028faa34724010127f1845f
+      Date:
+      - Wed, 17 Apr 2024 23:07:11 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '95'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3fQ.ChsmjEoBVIuCmQ2gjq3oqx5QBaCviHeiEWtGY1UOvAw"}'
+  recorded_at: Wed, 17 Apr 2024 23:07:10 GMT
+recorded_with: VCR 6.1.0

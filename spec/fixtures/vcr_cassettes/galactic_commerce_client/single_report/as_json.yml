@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/7426
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.ETUYUOkmfnWsWIvA8iBOkE2s1ZQ0V_zgnG_c4QRrhbg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - cc2b13f6d7614cd936ae0e29a27f993b;o=1
+      Date:
+      - Thu, 18 Apr 2024 02:48:57 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '9486'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '[{"id":"a3715bed-5d49-475d-91e9-962c31b374e2","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7450495,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":11000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":3076,"email":"3076@galacticsenate.com","referrence_id":"986f81216a9e7a9d16cace11e8fecc15"}},{"id":"fad6e5eb-c092-4352-b063-288a082021da","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":3494379,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":33000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2033,"email":"2033@galacticsenate.com","referrence_id":"f3b4c654acfe54375e7786d34664120f"}},{"id":"27b116b7-36e0-4459-81cb-0929b8a52583","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4606191,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":38000},{"sku":666,"name":"Elite Clone","units":800}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2812,"email":"2812@galacticsenate.com","referrence_id":"470b64f865819aedab266da3bdb60f68"}},{"id":"4444f109-7997-4710-862b-876b24ea631a","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":3368721,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":31000},{"sku":666,"name":"Elite Clone","units":800}],"delivery_notes":"No
+        delivery scheduled","account":{"id":1627,"email":"1627@galacticsenate.com","referrence_id":"7662e20c766b4db189c89536a88451c8"}},{"id":"d7ccbbe9-53f2-46bf-a02c-8b12cb621058","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":6840347,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":22000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2919,"email":"2919@galacticsenate.com","referrence_id":"f7d72aacfd393f74f274b4ff09773995"}},{"id":"a2b005b9-516c-461f-ad72-8eddb67ef1f6","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4254256,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":45000},{"sku":666,"name":"Elite Clone","units":600}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2538,"email":"2538@galacticsenate.com","referrence_id":"345ea4fca2a074231b43405bf9db9b9b"}},{"id":"d3b5c3d2-a39f-43f3-ad29-d8a43822845c","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":918784,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":11000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":1493,"email":"1493@galacticsenate.com","referrence_id":"65b936e3a800120dff24fb43f3ef1374"}},{"id":"3a38d98f-dfd6-4bb3-b071-63b2a3f603d9","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":8337052,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":31000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2608,"email":"2608@galacticsenate.com","referrence_id":"fde6b46acac7eda5a1d76bda23fdd4f3"}},{"id":"db162962-9f5c-4aeb-9f10-fa248d18cbc3","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":1608466,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":30000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2680,"email":"2680@galacticsenate.com","referrence_id":"568ea4bda2ff82c272fed6bdb5792c5f"}},{"id":"504515c8-ea76-42c6-8f71-a6b655674f4b","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":9632687,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":31000},{"sku":666,"name":"Elite Clone","units":700}],"delivery_notes":"No
+        delivery scheduled","account":{"id":3194,"email":"3194@galacticsenate.com","referrence_id":"1a831f3152994862f604c0ae86154bc3"}},{"id":"d7404c83-3907-44e4-9007-bc579a4f931c","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4843781,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":28000},{"sku":666,"name":"Elite Clone","units":600}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2707,"email":"2707@galacticsenate.com","referrence_id":"96ec855d06b9add5c539661b5db5407b"}},{"id":"d44e5801-af3f-4d45-b3eb-a3e9b8b2ea05","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4358546,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":16000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2313,"email":"2313@galacticsenate.com","referrence_id":"1e8f741fa2dd6747239a0124a5f4bf8b"}},{"id":"4d045123-db95-4f68-95d4-d985bc134e24","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":6961995,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":38000},{"sku":666,"name":"Elite Clone","units":700}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2021,"email":"2021@galacticsenate.com","referrence_id":"8d2159b8fc610c2c9bd57a567f8c0bfe"}},{"id":"2aa3c41b-fb52-4cd9-b00e-d438a1d2fe7a","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":8498431,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":20000},{"sku":666,"name":"Elite Clone","units":600}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2110,"email":"2110@galacticsenate.com","referrence_id":"a2fe6f2a7bd4d56b62c49e7443d1a810"}},{"id":"e2f2ce3e-229c-4261-82c9-cb52469278cc","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":510266,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":46000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2129,"email":"2129@galacticsenate.com","referrence_id":"1d4a37f145a4ef5c6f0e30f63d742a82"}},{"id":"a03fad86-17f7-4178-8b52-c8ad51636fd1","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7154078,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":35000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2092,"email":"2092@galacticsenate.com","referrence_id":"0c93c6a87e1068681bbf620bd055a143"}},{"id":"a98b535d-afa1-44ef-91fe-b1e8bc09de53","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7927282,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":25000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2285,"email":"2285@galacticsenate.com","referrence_id":"6f9fac12b035757edd1c0983da525fed"}},{"id":"a98b535d-afa1-44ef-91fe-b1e8bc09de53","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4386451,"status":"partial_refund","items":[{"sku":101,"name":"Standard
+        Clones","units":25000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2285,"email":"2285@galacticsenate.com","referrence_id":"6f9fac12b035757edd1c0983da525fed"}},{"id":"4a1c808f-7562-47ae-bb60-d8dc765ef105","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":5055805,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":12000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2199,"email":"2199@galacticsenate.com","referrence_id":"7bfc5f67c56055ce520382163d4ef2dc"}},{"id":"1dc006ad-240f-41dd-aa73-bb823ed91d24","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":9320379,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":42000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":1971,"email":"1971@galacticsenate.com","referrence_id":"a9879456ee16b6e196cfc74c525acb9d"}},{"id":"879c6d76-2916-4ba8-9325-ee1fefbf55ee","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7168380,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":24000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2243,"email":"2243@galacticsenate.com","referrence_id":"0cc4dc330490c66efd82afa24927febf"}}]'
+  recorded_at: Thu, 18 Apr 2024 02:48:57 GMT
+recorded_with: VCR 6.1.0

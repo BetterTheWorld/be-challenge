@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/register?email=&password=
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cloud-Trace-Context:
+      - 52c2885be748101a0ca064aef219aafd;o=1
+      Date:
+      - Thu, 18 Apr 2024 04:12:22 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '57'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "'I have a bad feelign about this' (Email can't be blank)\n"
+  recorded_at: Thu, 18 Apr 2024 04:12:22 GMT
+recorded_with: VCR 6.1.0

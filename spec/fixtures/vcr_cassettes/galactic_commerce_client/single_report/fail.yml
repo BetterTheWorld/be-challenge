@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Www-Authenticate:
+      - Basic realm="Restricted Area"
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cloud-Trace-Context:
+      - 4f2b0611e68f328897d230fb2dae3196;o=1
+      Date:
+      - Thu, 18 Apr 2024 04:44:13 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '63'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "'All other information on your level is restricted'(Forbidden)\n"
+  recorded_at: Thu, 18 Apr 2024 04:44:13 GMT
+recorded_with: VCR 6.1.0

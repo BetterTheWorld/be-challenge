@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.ETUYUOkmfnWsWIvA8iBOkE2s1ZQ0V_zgnG_c4QRrhbg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - da6e42540ac93d1cb065475c25a9608d;o=1
+      Date:
+      - Thu, 18 Apr 2024 02:34:33 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '720'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Kamino Human Resources, LTD","location":"Kamino","currency":"Republic
+        Credits","symbol":"RCR","report_id":7426,"format":"json","referrence_id":"The
+        id you submited to identify your transaction is under ''account'', as ''referrence_id''"},{"name":"Mon
+        Calamari Shipyards","location":"Mon Cala","currency":"Calamari Flan","symbol":"CFL","report_id":4738,"format":"csv","referrence_id":"The
+        id you submited to identify your transaction is as ''account_external_ref''","note":"Value
+        is not in full CFL"},{"name":"Creed Forge","location":"REDACTED","currency":"Republic
+        Credits","symbol":"RCR","report_id":3745,"format":"xml","referrence_id":"The
+        id you submited to identify your transaction is as ''client_external_id''"}]'
+  recorded_at: Thu, 18 Apr 2024 02:34:33 GMT
+recorded_with: VCR 6.1.0

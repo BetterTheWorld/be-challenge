@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/4738
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.ETUYUOkmfnWsWIvA8iBOkE2s1ZQ0V_zgnG_c4QRrhbg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cloud-Trace-Context:
+      - 10ed2d233de736def256af46eb2f3654;o=1
+      Date:
+      - Thu, 18 Apr 2024 02:55:41 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '6247'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        id,created_at,placed_at,paid_at,value,status,order_details,account_number,account_external_ref,account_name,account_contact
+        3c8afb55-002f-4ed5-ae3f-7af240405662,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3754625,paid,"10xMC30C,5xMC-SC,2xViscountClass",4243,cc27ef07a5ecc764b9c9d3cf85c620d9,Vice Admiral Holdo,vice_admiral_holdo@holdo.com
+        817f8826-aec1-4fbe-b81c-adb68b4f406c,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,7596497,paid,"9xMC30C,2xMC-SC,1xViscountClass",5704,f35331c73e8ca20ab22bbb3b6d638195,Bail Organa,bail_organa@organa.com
+        24ca6394-700d-4f0b-9478-2eaba86dc923,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,7464510,paid,"11xMC30C,2xMC-SC,1xViscountClass",6446,3035820979bcba97b7668a228868954f,Mace Windu,mace_windu@windu.com
+        d809b61a-a99c-49ee-bdcc-ab99f3569cbd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,7346720,paid,"7xMC30C,5xMC-SC,1xViscountClass",4540,891a200fdb3f22646446712793da2d77,Saw Gerrera,saw_gerrera@gerrera.com
+        7d22df7a-a1b9-48e4-8bf1-1f9530db5760,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,9988394,paid,"10xMC30C,2xMC-SC,1xViscountClass",3623,b4d87c838c921ea214ab22e84fb28c71,Jyn Erso,jyn_erso@erso.com
+        7dae122e-6a7b-4405-947a-f0eec0a27282,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8832574,paid,"10xMC30C,5xMC-SC,1xViscountClass",6003,c6c9ad2ee63af43ea07bd8e1fbfede05,Ki-Adi-Mundi,kiadimundi@kiadimundi.com
+        a031b183-1930-477f-b68e-5f7929a1821c,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,225519,paid,"11xMC30C,2xMC-SC,2xViscountClass",6251,7020bfbd9fa89c1e6ca9b66fe154f28c,Kanan Jarrus,kanan_jarrus@jarrus.com
+        d2d36cec-7440-45c5-866a-f81a1ff2bd21,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8741305,paid,"6xMC30C,5xMC-SC,1xViscountClass",5203,7e1760099bcf627d7d36cf57e12370e8,General Hux,general_hux@hux.com
+        c38189d8-a9be-454e-82b5-f73229c2dd2b,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5097252,paid,"7xMC30C,6xMC-SC,2xViscountClass",6458,106be760485959ff7542e7a764cc4bcd,Finn,finn@finn.com
+        6cc9463c-66d0-4ac9-bcbd-6859e374f4a4,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5193736,paid,"9xMC30C,6xMC-SC,1xViscountClass",4820,3e3b10ab9244010e2ab55fadbe6cd016,Galen Erso,galen_erso@erso.com
+        6100f250-014d-430f-b36a-a5294f55cd6e,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,433476,paid,"11xMC30C,2xMC-SC,2xViscountClass",5995,25e034efbb04336388ec328c8fc20537,Ezra Bridger,ezra_bridger@bridger.com
+        6af4ce79-6137-44d2-b275-3545dba0e165,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,355916,paid,"11xMC30C,5xMC-SC,1xViscountClass",5681,1c7a3bf01297f04759ec096c4c2c6ea8,Darth Sidious,darth_sidious@sidious.com
+        13012b0c-14bb-40e1-9790-f75405726ca9,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,6333139,paid,"8xMC30C,3xMC-SC,2xViscountClass",5702,f7caf9a56898d7548693ca46c2d7f517,Grand Admiral Thrawn,grand_admiral_thrawn@thrawn.com
+        180c70e9-5c15-40c0-a138-fe5ae2438cbd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,2628122,paid,"7xMC30C,3xMC-SC,1xViscountClass",5227,2964af9a77ebc78682aaa5060d0c4711,Yoda,yoda@yoda.com
+        6c2fcc3c-111c-487b-a7db-2bff49127982,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8912434,paid,"7xMC30C,6xMC-SC,2xViscountClass",5589,1fc5efabf73738a74c0aaadffd400bf7,Jabba the Hutt,jabba_the_hutt@hutt.com
+        61b179ba-bb54-49be-bb88-4cc5fc2e378d,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,9614125,paid,"12xMC30C,2xMC-SC,1xViscountClass",5743,04a78060f39d1d3003253330f41744b4,Chewbacca,chewbacca@chewbacca.com
+        0f194e91-56a4-4e96-844a-ccdce605d0d8,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,1901439,paid,"9xMC30C,5xMC-SC,1xViscountClass",3558,bd053e312caeb7cfd9505454673b7421,Chirrut Imwe,chirrut_imwe@imwe.com
+        4517a1d5-8d86-4671-b621-86f7795f76e7,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,6985194,paid,"6xMC30C,6xMC-SC,2xViscountClass",5318,930ea13c2d87847f69792ab05d48bc07,Ben Solo,ben_solo@solo.com
+        b4e60d15-df81-4931-ba0a-f2d13dedbb5f,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8866182,paid,"12xMC30C,4xMC-SC,1xViscountClass",3886,00901fa41cbd2ac0fb541e79a367f3ee,Watto,watto@watto.com
+        a81a36fc-f417-4b95-a7d3-58587c6d0060,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5349099,paid,"7xMC30C,5xMC-SC,1xViscountClass",3340,ae30fad70d7eb07dd0bfd8986d44d54f,Darth Caedus,darth_caedus@caedus.com
+        5832512d-86fa-402b-a8ed-abbdbc7d488c,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4642589,paid,"6xMC30C,5xMC-SC,1xViscountClass",5834,acb72113a9ee69760b8594213a98b7a2,Watto,watto@watto.com
+        41731983-5f7a-4118-9dc2-2d687f235765,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4959461,paid,"7xMC30C,6xMC-SC,1xViscountClass",3935,1a18dbf0e77bb3f09fc6b8d341738f63,Asajj Ventress,asajj_ventress@ventress.com
+        41731983-5f7a-4118-9dc2-2d687f235765,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3439226,partial_refund,"7xMC30C,6xMC-SC,1xViscountClass",3935,1a18dbf0e77bb3f09fc6b8d341738f63,Asajj Ventress,asajj_ventress@ventress.com
+        058734bc-674c-4e28-9c59-980eba787cd8,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5026176,paid,"10xMC30C,3xMC-SC,1xViscountClass",6406,a705f28ed94d82385ea001fe6b9abc35,Savage Opress,savage_opress@opress.com
+        b0c11571-7b9c-4fca-8b0c-b59e94505743,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3868371,paid,"6xMC30C,3xMC-SC,2xViscountClass",3659,0890c43bb861722d5787b0cba132cda4,Galen Erso,galen_erso@erso.com
+        b6b8649d-6d57-409b-9d01-6477ea8d22cd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4595482,paid,"11xMC30C,6xMC-SC,2xViscountClass",5554,4739d408e6015e14be036cc828ddce91,Grand Moff Tarkin,grand_moff_tarkin@tarkin.com
+  recorded_at: Thu, 18 Apr 2024 02:55:41 GMT
+recorded_with: VCR 6.1.0

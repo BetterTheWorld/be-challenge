@@ -24,6 +24,10 @@ How to setup a new organization:
   SetupOrganization.call(params: params)
 ```
 
+Result:
+
+![Result](https://i.imgur.com/4D9u6bz.png)
+
 ### Pending to add technical instructions
 
 ## Back End Challenge

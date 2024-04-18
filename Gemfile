@@ -5,6 +5,7 @@ gem 'sinatra-contrib'
 gem "sinatra-activerecord"    # for Active Record models
 gem "rake"  # so we can run Rake tasks
 gem "httparty"
+gem 'dotenv'
 
 group :production do
   # Use Postgresql for ActiveRecord

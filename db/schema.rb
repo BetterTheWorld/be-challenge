@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_04_17_203015) do
+ActiveRecord::Schema.define(version: 2024_04_18_054424) do
+
+  create_table "organizations", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "email", null: false
+    t.string "encrypted_password", null: false
+    t.string "commerce_token", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "reports", force: :cascade do |t|
     t.string "name", null: false
@@ -21,6 +30,8 @@ ActiveRecord::Schema.define(version: 2024_04_17_203015) do
     t.string "format", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "organization_id"
+    t.index ["organization_id"], name: "index_reports_on_organization_id"
   end
 
   create_table "transactions", id: :string, force: :cascade do |t|
@@ -37,5 +48,6 @@ ActiveRecord::Schema.define(version: 2024_04_17_203015) do
     t.index ["report_id"], name: "index_transactions_on_report_id"
   end
 
+  add_foreign_key "reports", "organizations"
   add_foreign_key "transactions", "reports"
 end

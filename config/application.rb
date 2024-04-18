@@ -5,6 +5,7 @@ require 'sinatra/activerecord'
 require 'byebug'
 require 'pry'
 require 'httparty'
+require 'dotenv'
 
 set :database_file, '../config/database.yml'
 
@@ -17,3 +18,5 @@ logger.formatter = proc do |severity, datetime, progname, msg|
 end
 
 ActiveRecord::Base.logger = logger
+
+Dotenv.load

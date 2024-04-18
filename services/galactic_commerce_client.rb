@@ -5,7 +5,7 @@ class GalacticCommerceClient
   include HTTParty
 
   def initialize
-    @base_uri = 'https://be-challenge-uqjcnl577q-pd.a.run.app'
+    @base_uri = ENV["COMMERCE_API"]
   end
 
   def self.instance

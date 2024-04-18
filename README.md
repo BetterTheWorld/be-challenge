@@ -54,9 +54,4 @@ The objective of this challenge is to process as many transaction reports as pos
 10. You may use `irb` and `require './app.rb'` to have a working console with the application loaded.
 
 ### Notes
-<<<<<<< HEAD
-
-- Intent: An intent is a user initiated interaction with shopping, similar to viewing a product but not yet adding it to cart. The intent's is what is passed to the vendors to track that the shopping 'trip', and any resulting transactions, came form FlipGive.
-=======
 - Intent: An `Intent` is a user initiated interaction with an online store, like a person walking into a store, but not making any purchase yet. And if an `Intent` is walking into the store, a `Transaction` is a purchase. The intent's ID is what is passed to the vendors to track that the 'shopping trip', and any resulting sales, came form FlipGive.
->>>>>>> b4f35d40228f00534fb29dfe9ffeea2a05eb2911

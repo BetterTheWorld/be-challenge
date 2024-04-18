@@ -8,6 +8,7 @@ gem 'rack-test'
 gem 'rspec'
 gem "byebug"
 gem 'httparty', '~> 0.13.7'
+gem 'nokogiri'
 
 group :production do
   # Use Postgresql for ActiveRecord

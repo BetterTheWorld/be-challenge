@@ -1,11 +1,13 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sinatra"
+gem 'sinatra'
 gem 'sinatra-contrib'
-gem "sinatra-activerecord"    # for Active Record models
-gem "rake"  # so we can run Rake tasks
-gem "httparty"
+gem 'sinatra-activerecord' # for Active Record models
+gem 'rake' # so we can run Rake tasks
+gem 'httparty'
 gem 'dotenv'
+gem 'interactor', '~> 3.0'
+gem 'hashie'
 
 group :production do
   # Use Postgresql for ActiveRecord

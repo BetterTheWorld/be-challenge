@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_04_175228) do
+ActiveRecord::Schema.define(version: 2024_04_17_203015) do
+
+  create_table "reports", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "location", null: false
+    t.string "currency", null: false
+    t.string "symbol", null: false
+    t.string "external_report_id", null: false
+    t.string "format", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "transactions", id: :string, force: :cascade do |t|
     t.string "intent_id", null: false
@@ -21,7 +32,10 @@ ActiveRecord::Schema.define(version: 2020_04_04_175228) do
     t.string "status", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "report_id"
     t.index ["external_id"], name: "index_transactions_on_external_id", unique: true
+    t.index ["report_id"], name: "index_transactions_on_report_id"
   end
 
+  add_foreign_key "transactions", "reports"
 end

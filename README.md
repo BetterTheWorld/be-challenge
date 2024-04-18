@@ -12,6 +12,18 @@
 
 ![Diagram](https://i.imgur.com/EnTNiDV.png)
 
+How to setup a new organization:
+
+```ruby
+  params = {
+    name: "Shopify",
+    email: "commerce#{rand(1..2000)}@shopify.com",
+    password: "Taco1234",
+  }
+
+  SetupOrganization.call(params: params)
+```
+
 ### Pending to add technical instructions
 
 ## Back End Challenge

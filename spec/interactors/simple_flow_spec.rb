@@ -5,10 +5,10 @@ require 'spec_helper'
 
 # rspec --format documentation
 
-RSpec.describe SetupOrganization do
+RSpec.describe SimpleFlow do
   let(:organization_name) { 'Shopify' }
-  let(:email) { "commerce1@shopify.com" }
-  let(:password) { "Taco1234" }
+  let(:email) { 'commerce4@shopify.com' }
+  let(:password) { 'Taco1234' }
   let(:params) do
     {
       name: organization_name,
@@ -16,13 +16,16 @@ RSpec.describe SetupOrganization do
       password: password
     }
   end
-  let(:interactor){ described_class.call(params: params)}
+  let(:interactor) { described_class.call(params: params) }
 
-  describe "#call" do
-    it "creates the transactions" do
-      VCR.use_cassette('interactors/setup_organization') do
+  describe '#call' do
+    it 'creates only the transactions' do
+      VCR.use_cassette('interactors/simpleflow') do
         expect(interactor.success?).to be true
+
         expect(Transaction.count).to eq(70)
+        expect(Report.count).to eq(0)
+        expect(Organization.count).to eq(0)
       end
     end
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/register?email=commerce1@shopify.com&password=Taco1234
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/register?email=commerce4@shopify.com&password=Taco1234
     body:
       encoding: UTF-8
       string: ''
@@ -23,9 +23,9 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Cloud-Trace-Context:
-      - 7c4b314c8fd2d749914906308a93a3b3;o=1
+      - bfeb5eba5a0486459f6e77478ce47de3;o=1
       Date:
-      - Fri, 19 Apr 2024 02:15:05 GMT
+      - Fri, 19 Apr 2024 03:00:22 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -34,8 +34,8 @@ http_interactions:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
       encoding: UTF-8
-      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE"}'
-  recorded_at: Fri, 19 Apr 2024 02:15:05 GMT
+      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.OMK7-WIm6xwEM1inhy7MakzQCr95RVO0eWCmo3FpYww"}'
+  recorded_at: Fri, 19 Apr 2024 03:00:23 GMT
 - request:
     method: get
     uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports
@@ -44,7 +44,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.OMK7-WIm6xwEM1inhy7MakzQCr95RVO0eWCmo3FpYww
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -61,9 +61,9 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Cloud-Trace-Context:
-      - 35276793547960dc72ca3d1c8faf573a
+      - a04c5319da0e2d314de981d06233297a
       Date:
-      - Fri, 19 Apr 2024 02:15:05 GMT
+      - Fri, 19 Apr 2024 03:00:23 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -80,7 +80,7 @@ http_interactions:
         is not in full CFL"},{"name":"Creed Forge","location":"REDACTED","currency":"Republic
         Credits","symbol":"RCR","report_id":3745,"format":"xml","referrence_id":"The
         id you submited to identify your transaction is as ''client_external_id''"}]'
-  recorded_at: Fri, 19 Apr 2024 02:15:05 GMT
+  recorded_at: Fri, 19 Apr 2024 03:00:23 GMT
 - request:
     method: get
     uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/7426
@@ -89,7 +89,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.OMK7-WIm6xwEM1inhy7MakzQCr95RVO0eWCmo3FpYww
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -106,9 +106,9 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Cloud-Trace-Context:
-      - 7f0b876962b22dc49db443041b6168a7
+      - 743f38769b460485a9dbe18a801786bd
       Date:
-      - Fri, 19 Apr 2024 02:15:06 GMT
+      - Fri, 19 Apr 2024 03:00:23 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -202,7 +202,7 @@ http_interactions:
         19:09:31 -0500","value":7168380,"status":"paid","items":[{"sku":101,"name":"Standard
         Clones","units":24000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
         delivery scheduled","account":{"id":2243,"email":"2243@galacticsenate.com","referrence_id":"0cc4dc330490c66efd82afa24927febf"}}]'
-  recorded_at: Fri, 19 Apr 2024 02:15:06 GMT
+  recorded_at: Fri, 19 Apr 2024 03:00:24 GMT
 - request:
     method: get
     uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/4738
@@ -211,7 +211,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.OMK7-WIm6xwEM1inhy7MakzQCr95RVO0eWCmo3FpYww
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -232,9 +232,9 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Cloud-Trace-Context:
-      - 4c96f443a1b4ab6614ae5fe6a7b2fb8c
+      - 9cd6a5280734b7894bf5b685f8710db9
       Date:
-      - Fri, 19 Apr 2024 02:15:06 GMT
+      - Fri, 19 Apr 2024 03:00:24 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -271,7 +271,7 @@ http_interactions:
         058734bc-674c-4e28-9c59-980eba787cd8,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5026176,paid,"10xMC30C,3xMC-SC,1xViscountClass",6406,a705f28ed94d82385ea001fe6b9abc35,Savage Opress,savage_opress@opress.com
         b0c11571-7b9c-4fca-8b0c-b59e94505743,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3868371,paid,"6xMC30C,3xMC-SC,2xViscountClass",3659,0890c43bb861722d5787b0cba132cda4,Galen Erso,galen_erso@erso.com
         b6b8649d-6d57-409b-9d01-6477ea8d22cd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4595482,paid,"11xMC30C,6xMC-SC,2xViscountClass",5554,4739d408e6015e14be036cc828ddce91,Grand Moff Tarkin,grand_moff_tarkin@tarkin.com
-  recorded_at: Fri, 19 Apr 2024 02:15:06 GMT
+  recorded_at: Fri, 19 Apr 2024 03:00:24 GMT
 - request:
     method: get
     uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/3745
@@ -280,7 +280,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1fQ.OMK7-WIm6xwEM1inhy7MakzQCr95RVO0eWCmo3FpYww
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -301,9 +301,9 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Cloud-Trace-Context:
-      - 26757db5fe59af75913610795f765f23
+      - 8e4c3ff8c9204bc90a336382d8bc276e
       Date:
-      - Fri, 19 Apr 2024 02:15:07 GMT
+      - Fri, 19 Apr 2024 03:00:25 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -680,5 +680,5 @@ http_interactions:
             <client_contact>REDACTED</client_contact>
           </transaction>
         </report>
-  recorded_at: Fri, 19 Apr 2024 02:15:07 GMT
+  recorded_at: Fri, 19 Apr 2024 03:00:25 GMT
 recorded_with: VCR 6.1.0

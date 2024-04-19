@@ -2,7 +2,10 @@
 class SetupOrganization
   include Interactor::Organizer
 
-  organize(CreateOrganization, GetReports, CreateReports, CreateTransactions)
+  organize(CreateOrganization,
+           GetReports,
+           CreateReports,
+           CreateTransactions)
 
   before do
     context.client = GalacticCommerceClient.instance

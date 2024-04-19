@@ -24,4 +24,5 @@ group :development, :test do
   gem 'rspec'
   gem 'pry'
   gem 'byebug'
+  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 end

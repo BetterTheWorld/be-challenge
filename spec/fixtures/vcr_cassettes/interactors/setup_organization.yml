@@ -1,0 +1,684 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/register?email=commerce@shopify.com&password=commerce@shopify.com
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - 244e23a1ab5637bff95bf0ba1d87ed3f;o=1
+      Date:
+      - Fri, 19 Apr 2024 01:08:46 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '95'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE"}'
+  recorded_at: Fri, 19 Apr 2024 01:08:46 GMT
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - ed3259d5ea1b4213fad252eb9feb0aaf
+      Date:
+      - Fri, 19 Apr 2024 01:08:47 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '720'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Kamino Human Resources, LTD","location":"Kamino","currency":"Republic
+        Credits","symbol":"RCR","report_id":7426,"format":"json","referrence_id":"The
+        id you submited to identify your transaction is under ''account'', as ''referrence_id''"},{"name":"Mon
+        Calamari Shipyards","location":"Mon Cala","currency":"Calamari Flan","symbol":"CFL","report_id":4738,"format":"csv","referrence_id":"The
+        id you submited to identify your transaction is as ''account_external_ref''","note":"Value
+        is not in full CFL"},{"name":"Creed Forge","location":"REDACTED","currency":"Republic
+        Credits","symbol":"RCR","report_id":3745,"format":"xml","referrence_id":"The
+        id you submited to identify your transaction is as ''client_external_id''"}]'
+  recorded_at: Fri, 19 Apr 2024 01:08:47 GMT
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/7426
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      X-Cloud-Trace-Context:
+      - fd5485c08c7dd07e4b69873146c70afb
+      Date:
+      - Fri, 19 Apr 2024 01:08:47 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '9486'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '[{"id":"a3715bed-5d49-475d-91e9-962c31b374e2","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7450495,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":11000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":3076,"email":"3076@galacticsenate.com","referrence_id":"986f81216a9e7a9d16cace11e8fecc15"}},{"id":"fad6e5eb-c092-4352-b063-288a082021da","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":3494379,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":33000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2033,"email":"2033@galacticsenate.com","referrence_id":"f3b4c654acfe54375e7786d34664120f"}},{"id":"27b116b7-36e0-4459-81cb-0929b8a52583","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4606191,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":38000},{"sku":666,"name":"Elite Clone","units":800}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2812,"email":"2812@galacticsenate.com","referrence_id":"470b64f865819aedab266da3bdb60f68"}},{"id":"4444f109-7997-4710-862b-876b24ea631a","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":3368721,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":31000},{"sku":666,"name":"Elite Clone","units":800}],"delivery_notes":"No
+        delivery scheduled","account":{"id":1627,"email":"1627@galacticsenate.com","referrence_id":"7662e20c766b4db189c89536a88451c8"}},{"id":"d7ccbbe9-53f2-46bf-a02c-8b12cb621058","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":6840347,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":22000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2919,"email":"2919@galacticsenate.com","referrence_id":"f7d72aacfd393f74f274b4ff09773995"}},{"id":"a2b005b9-516c-461f-ad72-8eddb67ef1f6","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4254256,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":45000},{"sku":666,"name":"Elite Clone","units":600}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2538,"email":"2538@galacticsenate.com","referrence_id":"345ea4fca2a074231b43405bf9db9b9b"}},{"id":"d3b5c3d2-a39f-43f3-ad29-d8a43822845c","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":918784,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":11000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":1493,"email":"1493@galacticsenate.com","referrence_id":"65b936e3a800120dff24fb43f3ef1374"}},{"id":"3a38d98f-dfd6-4bb3-b071-63b2a3f603d9","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":8337052,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":31000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2608,"email":"2608@galacticsenate.com","referrence_id":"fde6b46acac7eda5a1d76bda23fdd4f3"}},{"id":"db162962-9f5c-4aeb-9f10-fa248d18cbc3","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":1608466,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":30000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2680,"email":"2680@galacticsenate.com","referrence_id":"568ea4bda2ff82c272fed6bdb5792c5f"}},{"id":"504515c8-ea76-42c6-8f71-a6b655674f4b","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":9632687,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":31000},{"sku":666,"name":"Elite Clone","units":700}],"delivery_notes":"No
+        delivery scheduled","account":{"id":3194,"email":"3194@galacticsenate.com","referrence_id":"1a831f3152994862f604c0ae86154bc3"}},{"id":"d7404c83-3907-44e4-9007-bc579a4f931c","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4843781,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":28000},{"sku":666,"name":"Elite Clone","units":600}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2707,"email":"2707@galacticsenate.com","referrence_id":"96ec855d06b9add5c539661b5db5407b"}},{"id":"d44e5801-af3f-4d45-b3eb-a3e9b8b2ea05","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4358546,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":16000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2313,"email":"2313@galacticsenate.com","referrence_id":"1e8f741fa2dd6747239a0124a5f4bf8b"}},{"id":"4d045123-db95-4f68-95d4-d985bc134e24","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":6961995,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":38000},{"sku":666,"name":"Elite Clone","units":700}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2021,"email":"2021@galacticsenate.com","referrence_id":"8d2159b8fc610c2c9bd57a567f8c0bfe"}},{"id":"2aa3c41b-fb52-4cd9-b00e-d438a1d2fe7a","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":8498431,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":20000},{"sku":666,"name":"Elite Clone","units":600}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2110,"email":"2110@galacticsenate.com","referrence_id":"a2fe6f2a7bd4d56b62c49e7443d1a810"}},{"id":"e2f2ce3e-229c-4261-82c9-cb52469278cc","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":510266,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":46000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2129,"email":"2129@galacticsenate.com","referrence_id":"1d4a37f145a4ef5c6f0e30f63d742a82"}},{"id":"a03fad86-17f7-4178-8b52-c8ad51636fd1","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7154078,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":35000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2092,"email":"2092@galacticsenate.com","referrence_id":"0c93c6a87e1068681bbf620bd055a143"}},{"id":"a98b535d-afa1-44ef-91fe-b1e8bc09de53","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7927282,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":25000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2285,"email":"2285@galacticsenate.com","referrence_id":"6f9fac12b035757edd1c0983da525fed"}},{"id":"a98b535d-afa1-44ef-91fe-b1e8bc09de53","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":4386451,"status":"partial_refund","items":[{"sku":101,"name":"Standard
+        Clones","units":25000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2285,"email":"2285@galacticsenate.com","referrence_id":"6f9fac12b035757edd1c0983da525fed"}},{"id":"4a1c808f-7562-47ae-bb60-d8dc765ef105","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":5055805,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":12000},{"sku":666,"name":"Elite Clone","units":500}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2199,"email":"2199@galacticsenate.com","referrence_id":"7bfc5f67c56055ce520382163d4ef2dc"}},{"id":"1dc006ad-240f-41dd-aa73-bb823ed91d24","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":9320379,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":42000},{"sku":666,"name":"Elite Clone","units":1000}],"delivery_notes":"No
+        delivery scheduled","account":{"id":1971,"email":"1971@galacticsenate.com","referrence_id":"a9879456ee16b6e196cfc74c525acb9d"}},{"id":"879c6d76-2916-4ba8-9325-ee1fefbf55ee","created_at":"2022-02-20
+        18:54:46 -0500","placed_at":"2022-02-20 19:09:31 -0500","paid_at":"2022-02-20
+        19:09:31 -0500","value":7168380,"status":"paid","items":[{"sku":101,"name":"Standard
+        Clones","units":24000},{"sku":666,"name":"Elite Clone","units":900}],"delivery_notes":"No
+        delivery scheduled","account":{"id":2243,"email":"2243@galacticsenate.com","referrence_id":"0cc4dc330490c66efd82afa24927febf"}}]'
+  recorded_at: Fri, 19 Apr 2024 01:08:47 GMT
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/4738
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cloud-Trace-Context:
+      - e01ae503d2a911654aab1e71c6974828
+      Date:
+      - Fri, 19 Apr 2024 01:08:48 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '6247'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        id,created_at,placed_at,paid_at,value,status,order_details,account_number,account_external_ref,account_name,account_contact
+        3c8afb55-002f-4ed5-ae3f-7af240405662,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3754625,paid,"10xMC30C,5xMC-SC,2xViscountClass",4243,cc27ef07a5ecc764b9c9d3cf85c620d9,Vice Admiral Holdo,vice_admiral_holdo@holdo.com
+        817f8826-aec1-4fbe-b81c-adb68b4f406c,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,7596497,paid,"9xMC30C,2xMC-SC,1xViscountClass",5704,f35331c73e8ca20ab22bbb3b6d638195,Bail Organa,bail_organa@organa.com
+        24ca6394-700d-4f0b-9478-2eaba86dc923,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,7464510,paid,"11xMC30C,2xMC-SC,1xViscountClass",6446,3035820979bcba97b7668a228868954f,Mace Windu,mace_windu@windu.com
+        d809b61a-a99c-49ee-bdcc-ab99f3569cbd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,7346720,paid,"7xMC30C,5xMC-SC,1xViscountClass",4540,891a200fdb3f22646446712793da2d77,Saw Gerrera,saw_gerrera@gerrera.com
+        7d22df7a-a1b9-48e4-8bf1-1f9530db5760,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,9988394,paid,"10xMC30C,2xMC-SC,1xViscountClass",3623,b4d87c838c921ea214ab22e84fb28c71,Jyn Erso,jyn_erso@erso.com
+        7dae122e-6a7b-4405-947a-f0eec0a27282,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8832574,paid,"10xMC30C,5xMC-SC,1xViscountClass",6003,c6c9ad2ee63af43ea07bd8e1fbfede05,Ki-Adi-Mundi,kiadimundi@kiadimundi.com
+        a031b183-1930-477f-b68e-5f7929a1821c,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,225519,paid,"11xMC30C,2xMC-SC,2xViscountClass",6251,7020bfbd9fa89c1e6ca9b66fe154f28c,Kanan Jarrus,kanan_jarrus@jarrus.com
+        d2d36cec-7440-45c5-866a-f81a1ff2bd21,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8741305,paid,"6xMC30C,5xMC-SC,1xViscountClass",5203,7e1760099bcf627d7d36cf57e12370e8,General Hux,general_hux@hux.com
+        c38189d8-a9be-454e-82b5-f73229c2dd2b,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5097252,paid,"7xMC30C,6xMC-SC,2xViscountClass",6458,106be760485959ff7542e7a764cc4bcd,Finn,finn@finn.com
+        6cc9463c-66d0-4ac9-bcbd-6859e374f4a4,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5193736,paid,"9xMC30C,6xMC-SC,1xViscountClass",4820,3e3b10ab9244010e2ab55fadbe6cd016,Galen Erso,galen_erso@erso.com
+        6100f250-014d-430f-b36a-a5294f55cd6e,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,433476,paid,"11xMC30C,2xMC-SC,2xViscountClass",5995,25e034efbb04336388ec328c8fc20537,Ezra Bridger,ezra_bridger@bridger.com
+        6af4ce79-6137-44d2-b275-3545dba0e165,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,355916,paid,"11xMC30C,5xMC-SC,1xViscountClass",5681,1c7a3bf01297f04759ec096c4c2c6ea8,Darth Sidious,darth_sidious@sidious.com
+        13012b0c-14bb-40e1-9790-f75405726ca9,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,6333139,paid,"8xMC30C,3xMC-SC,2xViscountClass",5702,f7caf9a56898d7548693ca46c2d7f517,Grand Admiral Thrawn,grand_admiral_thrawn@thrawn.com
+        180c70e9-5c15-40c0-a138-fe5ae2438cbd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,2628122,paid,"7xMC30C,3xMC-SC,1xViscountClass",5227,2964af9a77ebc78682aaa5060d0c4711,Yoda,yoda@yoda.com
+        6c2fcc3c-111c-487b-a7db-2bff49127982,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8912434,paid,"7xMC30C,6xMC-SC,2xViscountClass",5589,1fc5efabf73738a74c0aaadffd400bf7,Jabba the Hutt,jabba_the_hutt@hutt.com
+        61b179ba-bb54-49be-bb88-4cc5fc2e378d,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,9614125,paid,"12xMC30C,2xMC-SC,1xViscountClass",5743,04a78060f39d1d3003253330f41744b4,Chewbacca,chewbacca@chewbacca.com
+        0f194e91-56a4-4e96-844a-ccdce605d0d8,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,1901439,paid,"9xMC30C,5xMC-SC,1xViscountClass",3558,bd053e312caeb7cfd9505454673b7421,Chirrut Imwe,chirrut_imwe@imwe.com
+        4517a1d5-8d86-4671-b621-86f7795f76e7,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,6985194,paid,"6xMC30C,6xMC-SC,2xViscountClass",5318,930ea13c2d87847f69792ab05d48bc07,Ben Solo,ben_solo@solo.com
+        b4e60d15-df81-4931-ba0a-f2d13dedbb5f,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,8866182,paid,"12xMC30C,4xMC-SC,1xViscountClass",3886,00901fa41cbd2ac0fb541e79a367f3ee,Watto,watto@watto.com
+        a81a36fc-f417-4b95-a7d3-58587c6d0060,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5349099,paid,"7xMC30C,5xMC-SC,1xViscountClass",3340,ae30fad70d7eb07dd0bfd8986d44d54f,Darth Caedus,darth_caedus@caedus.com
+        5832512d-86fa-402b-a8ed-abbdbc7d488c,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4642589,paid,"6xMC30C,5xMC-SC,1xViscountClass",5834,acb72113a9ee69760b8594213a98b7a2,Watto,watto@watto.com
+        41731983-5f7a-4118-9dc2-2d687f235765,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4959461,paid,"7xMC30C,6xMC-SC,1xViscountClass",3935,1a18dbf0e77bb3f09fc6b8d341738f63,Asajj Ventress,asajj_ventress@ventress.com
+        41731983-5f7a-4118-9dc2-2d687f235765,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3439226,partial_refund,"7xMC30C,6xMC-SC,1xViscountClass",3935,1a18dbf0e77bb3f09fc6b8d341738f63,Asajj Ventress,asajj_ventress@ventress.com
+        058734bc-674c-4e28-9c59-980eba787cd8,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,5026176,paid,"10xMC30C,3xMC-SC,1xViscountClass",6406,a705f28ed94d82385ea001fe6b9abc35,Savage Opress,savage_opress@opress.com
+        b0c11571-7b9c-4fca-8b0c-b59e94505743,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,3868371,paid,"6xMC30C,3xMC-SC,2xViscountClass",3659,0890c43bb861722d5787b0cba132cda4,Galen Erso,galen_erso@erso.com
+        b6b8649d-6d57-409b-9d01-6477ea8d22cd,2022-02-21 04:51:01 -0500,2022-02-21 06:24:48 -0500,2022-02-21 06:24:48 -0500,4595482,paid,"11xMC30C,6xMC-SC,2xViscountClass",5554,4739d408e6015e14be036cc828ddce91,Grand Moff Tarkin,grand_moff_tarkin@tarkin.com
+  recorded_at: Fri, 19 Apr 2024 01:08:47 GMT
+- request:
+    method: get
+    uri: https://be-challenge-uqjcnl577q-pd.a.run.app/reports/3745
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.0NAXbbVzeMaKZAl8HdOq3JcgIDf5xpGF2rkg5frw6FE
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cloud-Trace-Context:
+      - ce154d1c73ee03c85e9c5897ab9c0e45
+      Date:
+      - Fri, 19 Apr 2024 01:08:48 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '15440'
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0"?>
+        <report>
+          <transaction>
+            <id>1f6002c1-4990-497f-8f6c-c9ae5dd3a02e</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>5414377</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>24fe459bd162f7f729c466b736c909db</client_id>
+            <client_external_id>4016865d0ae1e749bb15e50648078334</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>eba7a803-0173-4729-a4b3-7f37fe747388</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>423455</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>27d3144fdd4a78c5def310715481f3a6</client_id>
+            <client_external_id>011a6c168419d57d350ee87e683e32be</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>140b1054-a52b-478e-a556-a49b17ef3d74</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>9382107</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>f67aab69b24bd77f3df64c19d5d57321</client_id>
+            <client_external_id>8e76a965bc087c262b61e39be5e53459</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>1fa1ccd4-97ac-4335-a3b4-a14942409fa3</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>8953916</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>b064c1e9a5f1e2fba6ca2bb5c9b1196a</client_id>
+            <client_external_id>711d582e78b91119af9e393cb4957f4c</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>a21671fc-bab1-4822-a2e3-d678d9da490d</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>4440607</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>90210e3b3b5314bbda9a4854bd3f0f1c</client_id>
+            <client_external_id>52591c48c929bf99f7379a0fe43ca51f</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>97bcbae9-2fc9-4f3e-b4ba-674d0a8fa891</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>7004574</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>c141aa35533f2ee0f692ea5922709f28</client_id>
+            <client_external_id>11ae31424fe4ceb9692cb23a64a1941b</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>3b7f9923-4943-45be-95fe-c56d4ce8ba9b</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>8225284</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>e8b6b405d295121e0afe8e3827f044f1</client_id>
+            <client_external_id>d081d7b9653a76a5b712bb3d6c5d3f1a</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>ad8d4250-c0e5-41ef-be77-987baa036b2d</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>9459492</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>21f59f89b74086d58ed2bdbfaeb2517f</client_id>
+            <client_external_id>fa82f9d6949536a107e2df9594eef7d3</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>ad8d4250-c0e5-41ef-be77-987baa036b2d</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>4350541</value>
+            <status>partial_refund</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>21f59f89b74086d58ed2bdbfaeb2517f</client_id>
+            <client_external_id>fa82f9d6949536a107e2df9594eef7d3</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>1a6d19e2-1c4b-44ad-95f8-cdd8172bbdc1</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>5228439</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>d6512796afee28c38a208b25bd530385</client_id>
+            <client_external_id>e320622ffed3a3bcad52287ce4bd0797</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>f20a7c71-554e-4713-bb33-7ae1d565af18</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>123844</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>e345caac3dd8a7607b2459d182598ba7</client_id>
+            <client_external_id>a03d5ed405a6e363577bd38b083215c8</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>ad749231-64ae-4943-92a9-69ae3df67f3e</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>9953514</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>f2c7d0b8d7b75937cbd78419cbe7270a</client_id>
+            <client_external_id>884c7a5267b6972d99d84c429ad8160f</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>f0221929-d49a-4945-a56c-8cfd6782ee72</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>3297023</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>d4f458c0ea295c1080e90fbb1e197e5c</client_id>
+            <client_external_id>4015c7ca141265d4822615d87715e073</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>a9991d89-8525-454f-af51-b091e19eb31a</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>3399179</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>dd9451b2437424eb11e2065b7fce327c</client_id>
+            <client_external_id>fb0b1894eafa39a325c0b214e1ad8386</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>cdfe9df4-1cd7-449b-ad5a-a2843169bf3c</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>6932800</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>db4ed513b5535e937e5c1f7e06a4a083</client_id>
+            <client_external_id>a6f80e79301fe03c21b81642ca55df39</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>bb1abf44-85e0-4676-8d3e-c951f06e4be3</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>7473677</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>10090d2878d7477af5c46eb8c4bf7c80</client_id>
+            <client_external_id>eedc3d4a6522570f280b68522f06ca61</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>cf88eee9-b444-4a05-a3a6-4a029acdf82e</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>5114999</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>a87eb0586b0386f4201575d89d19841a</client_id>
+            <client_external_id>1e59f8c2d0a0068ab19c08f7f9406e91</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>0822b1da-b718-4402-9b74-d849ca876deb</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>1188217</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>1e459d3cc0f7215cc99de1194734c44e</client_id>
+            <client_external_id>ebf4ea5ab3019d17eab9e40b1da0780c</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>bbb464aa-b514-4b20-9e81-b13c4ebfa6e7</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>2911757</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>6a97f4582b3017d277570a1ff4b5ff94</client_id>
+            <client_external_id>0f699dbb36afc5b370e1d829fea06754</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>0e0d10ee-0a04-4661-8829-a6cbee41559c</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>7285443</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>011efcf6cf201d99d32a111237cc75e6</client_id>
+            <client_external_id>45d8ac3c3fa2a8d5aa4c89d51d17bca4</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>b7d0b0ae-2063-47a2-8e5a-d886d14ef242</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>475699</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>2c9f915d2735a61b0061c0ceee0f08ee</client_id>
+            <client_external_id>bcf323d862ba3aba64f45ce7e01b6297</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>d0b66fd3-c1eb-4f13-89b1-9950079fcd07</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>3079504</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>be2756a7e99848c2a293ee37152b3224</client_id>
+            <client_external_id>017befd3e89b2a8325afa4e48459de70</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>bbe6b151-66a5-471e-87a0-f8b9a60c4fd8</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>4196174</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>3a221d25cc963178e3aaf297b750c1c8</client_id>
+            <client_external_id>68a5f08275e2612dd3139e0762c98fa8</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>ceed927d-0e33-4e56-9bb8-8d5f2b2a6088</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>9220444</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>b668f2a975859fedeabe8648fb918d42</client_id>
+            <client_external_id>3aeebbf1fc0f725ff18d6b27ab7080c0</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>1c69895e-2a64-4cf8-b489-e0c3957fc55c</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>9620915</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>9ad37c1d5aaa37a3c510ff0091eaecda</client_id>
+            <client_external_id>95f4e541edacd878c64d95d1b2f736f5</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+          <transaction>
+            <id>84826a03-16c8-4bfb-9bb2-f5121373a0a3</id>
+            <created_at>2022-02-21 06:52:26 -0500</created_at>
+            <placed_at>2022-02-21 07:50:21 -0500</placed_at>
+            <paid_at>2022-02-21 07:50:21 -0500</paid_at>
+            <value>7803850</value>
+            <status>paid</status>
+            <manifest>REDACTED</manifest>
+            <shipping>Curbside pickup</shipping>
+            <client_id>df6ff6383b5525899271da8370468a32</client_id>
+            <client_external_id>cf8aee42c800ec0cd2f90f36fb7d5122</client_external_id>
+            <client_name>REDACTED</client_name>
+            <client_contact>REDACTED</client_contact>
+          </transaction>
+        </report>
+  recorded_at: Fri, 19 Apr 2024 01:08:48 GMT
+recorded_with: VCR 6.1.0

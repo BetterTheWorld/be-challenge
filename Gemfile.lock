@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/bmabey/database_cleaner.git
+  revision: f458536ac6bb09cf93f4f4b53b9fce3741b6c0c8
+  specs:
+    database_cleaner (2.0.2)
+      database_cleaner-active_record (>= 2, < 3)
+    database_cleaner-core (2.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -20,6 +28,9 @@ GEM
     concurrent-ruby (1.1.9)
     crack (0.4.5)
       rexml
+    database_cleaner-active_record (2.1.0)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
     diff-lcs (1.5.0)
     dotenv (2.8.1)
     hashdiff (1.0.1)
@@ -100,6 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  database_cleaner!
   dotenv
   hashie
   httparty

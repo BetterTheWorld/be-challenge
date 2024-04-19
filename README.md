@@ -66,3 +66,13 @@ Get Reports By Id
 response = HTTParty.get("https://be-challenge-uqjcnl577q-pd.a.run.app/reports/#{report_id}", headers: { 'Authorization' => "#{token}" })
 response.parsed_response
 ```
+
+
+Save the transactions to our database
+
+```
+  token = 'you get this from the steps above'
+  params = {'token' => token }
+  report_service = ReportService.new(params)
+  report_service.save_reports_transactions_to_db
+```

@@ -1,7 +1,7 @@
 VENDORS_INTENT_ID_REFERENCE = {
     7426 => "['account']['referrence_id']",
     4738 => 'account_external_ref',
-    3745 =>'client_external_id'
+    3745 => 'client_external_id'
 }
 
 class ReportService
@@ -34,15 +34,18 @@ class ReportService
   end
 
   def sanitized_transactions(report_id, currency, report_transactions)
-    vendor_intent_id = VENDORS_INTENT_ID_REFERENCE[report_id]
-    if report_id == 7426
-      report_transactions.map do |transaction|
-        transaction.slice('paid_at', 'status').merge({ 'external_id' => transaction['id'], 'intent_id' => transaction['account']['referrence_id'], 'value_in_cents' => transaction['value'], 'currency' => currency })
+    intent_id_lambda = lambda { |report_id, transaction|
+      if report_id == 7426
+        transaction['account']['referrence_id']
+      else
+        transaction[VENDORS_INTENT_ID_REFERENCE[report_id]]
       end
-    else
-      report_transactions.map do |transaction|
-        transaction.slice('paid_at', 'status').merge({ 'external_id' => transaction['id'], 'intent_id' => transaction[vendor_intent_id], 'value_in_cents' => transaction['value'], 'currency' => currency })
-      end
+    }
+
+    report_transactions.map do |transaction|
+      transaction.slice('paid_at', 'status')
+                 .merge({ 'external_id' => transaction['id'], 'intent_id' => intent_id_lambda.call(report_id, transaction),
+                   'value_in_cents' => transaction['value'], 'currency' => currency })
     end
   end
 

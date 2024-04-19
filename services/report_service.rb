@@ -22,10 +22,14 @@ class ReportService
 
       save_transactions_to_db(transactions)
     end
+  rescue StandardError => e
+    "#{e.message} - Check your Auth token"
   end
 
   def get_reports
     response = HTTParty.get('https://be-challenge-uqjcnl577q-pd.a.run.app/reports', headers: { 'Authorization' => "#{@token}" })
+    raise StandardError, "Bad request error code: #{response.code}" unless response.code == 200
+
     response.parsed_response
   end
 
@@ -73,12 +77,8 @@ class ReportService
 
   def save_transactions_to_db(transactions_array = [])
     transactions_array.each do |transaction_hash|
-      begin
-        transaction_obj = Transaction.find_or_initialize_by(external_id: transaction_hash['external_id'])
-        transaction_obj.update(transaction_hash)
-      rescue Exception
-        binding.pry
-      end
+      transaction_obj = Transaction.find_or_initialize_by(external_id: transaction_hash['external_id'])
+      transaction_obj.update(transaction_hash)
     end
   end
 end

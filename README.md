@@ -46,11 +46,12 @@ SimpleFlow will only run the basic requirements and only create the transaction 
 ```
 
 Result:
+
 ![Result](https://i.imgur.com/TUYonUj.png)
 
 ### Test Coverage
 
-![Test](https://imgur.com/a/6OmR0)
+![Test](https://i.imgur.com/iZtwX2p.png)
 
 ### Pending to add technical instructions
 

@@ -76,3 +76,17 @@ Save the transactions to our database
   report_service = ReportService.new(params)
   report_service.save_reports_transactions_to_db
 ```
+we also could save an specific report transaction using this methods
+```
+report = report_service.get_reports.first
+
+report_id = report['report_id']
+currency = report['currency']
+format = report['format']
+
+report_transactions = report_service.report_transactions(report_id, format)
+
+transactions = report_service.sanitized_transactions(report_id, currency, report_transactions)
+
+report_service.save_transactions_to_db(transactions)
+```

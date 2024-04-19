@@ -24,9 +24,8 @@ RSpec.describe GalacticCommerceClient do
       it 'gets a 400 status code' do
         VCR.use_cassette('galactic_commerce_client/register_fail') do
           client = described_class.instance
-          response = client.register('', '')
 
-          expect(response.code).to eq(400)
+          expect { client.register('', '') }.to raise_error(GalacticCommerceError, /400/)
         end
       end
     end
@@ -45,9 +44,8 @@ RSpec.describe GalacticCommerceClient do
       it 'gets a 401 status code' do
         VCR.use_cassette('galactic_commerce_client/login_fail') do
           client = described_class.instance
-          response = client.login('bad_email', 'bad_password')
 
-          expect(response.code).to eq(401)
+          expect { client.login('bad_email', 'bad_password') }.to raise_error(GalacticCommerceError, /401/)
         end
       end
     end
@@ -71,9 +69,8 @@ RSpec.describe GalacticCommerceClient do
       it 'gets a 403 status code' do
         VCR.use_cassette('galactic_commerce_client/reports_fail') do
           client = described_class.instance
-          response = client.get_reports(token)
 
-          expect(response.code).to eq(403)
+          expect { client.get_reports(token) }.to raise_error(GalacticCommerceError, /403/)
         end
       end
     end
@@ -129,9 +126,7 @@ RSpec.describe GalacticCommerceClient do
         VCR.use_cassette('galactic_commerce_client/single_report/fail') do
           client = described_class.instance
 
-          response = client.get_report_by_id(report_id, token)
-
-          expect(response.code).to eq(403)
+          expect { client.get_report_by_id(report_id, token) }.to raise_error(GalacticCommerceError, /403/)
         end
       end
     end

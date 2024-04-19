@@ -3,6 +3,8 @@ class GetReports
 
   def call
     context.reports = context.client.get_reports(token)
+  rescue StandardError => e
+    context.fail!(message: e.message, error_code: :invalid_argument)
   end
 
   private

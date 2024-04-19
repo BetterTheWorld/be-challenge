@@ -32,6 +32,26 @@ Result:
 
 ![Result](https://i.imgur.com/4D9u6bz.png)
 
+SimpleFlow:
+SimpleFlow will only run the basic requirements and only create the transaction records
+
+```ruby
+  params = {
+    name: "Shopify",
+    email: "commerce#{rand(1..2000)}@shopify.com",
+    password: "Taco1234",
+  }
+
+  SimpleFlow.call(params: params)
+```
+
+Result:
+![Result](https://i.imgur.com/TUYonUj.png)
+
+### Test Coverage
+
+![Test](https://imgur.com/a/6OmR0)
+
 ### Pending to add technical instructions
 
 ## Back End Challenge

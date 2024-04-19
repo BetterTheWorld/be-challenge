@@ -28,5 +28,18 @@ RSpec.describe SimpleFlow do
         expect(Organization.count).to eq(0)
       end
     end
+
+    context "error handling" do
+      before do
+        allow_any_instance_of(Interactor::Context).to receive(:account_token).and_return("1")
+      end
+
+      it "catch the error" do
+        VCR.use_cassette('interactors/simpleflow_fail') do
+          expect(interactor).not_to be_success
+          expect(interactor.error_code).to be(:invalid_argument)
+        end
+      end
+    end
   end
 end

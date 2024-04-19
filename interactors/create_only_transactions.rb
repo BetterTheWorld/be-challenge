@@ -2,9 +2,17 @@ class CreateOnlyTransactions
   include Interactor
 
   def call
+    process_reports
+  rescue StandardError => e
+    context.fail!(message: e.message, error_code: :invalid_argument)
+  end
+
+  private
+
+  def process_reports
     reports.each do |report|
       format = report['format']
-      token = context.account_token
+      token = account_token
       report_id = report['report_id']
       currency = report['currency']
 
@@ -12,24 +20,19 @@ class CreateOnlyTransactions
 
       case format
       when 'json'
-        filetered_transactions = transactions.uniq { |hash| hash['id'] }
-
-        TransactionOnlyService.call(filetered_transactions, JsonSanitizer, currency)
+        filtered_transactions = transactions.uniq { |hash| hash['id'] }
+        TransactionOnlyService.call(filtered_transactions, JsonSanitizer, currency)
       when 'csv'
-        filetered_transactions = transactions.uniq { |hash| hash['id'] }
-
-        TransactionOnlyService.call(filetered_transactions, CsvSanitizer, currency)
+        filtered_transactions = transactions.uniq { |hash| hash['id'] }
+        TransactionOnlyService.call(filtered_transactions, CsvSanitizer, currency)
       when 'xml'
-        filetered_transactions = transactions.dig('report', 'transaction').uniq { |hash| hash['id'] }
-
-        TransactionOnlyService.call(filetered_transactions, XmlSanitizer, currency)
+        filtered_transactions = transactions.dig('report', 'transaction').uniq { |hash| hash['id'] }
+        TransactionOnlyService.call(filtered_transactions, XmlSanitizer, currency)
       else
         raise ArgumentError, "Unsupported format: #{format}"
       end
     end
   end
 
-  private
-
-  delegate :reports, :client, to: :context
+  delegate :reports, :client, :account_token, to: :context
 end

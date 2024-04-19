@@ -41,7 +41,7 @@ class GalacticCommerceClient
   end
 
   def handle_response(response)
-    return OpenStruct.new(message: response.body, code: response.code) unless response.success?
+    return error_mesage(response) unless response.success?
 
     content_type = response.headers['content-type']
 
@@ -64,4 +64,12 @@ class GalacticCommerceClient
   rescue CSV::MalformedCSVError
     false
   end
+
+ def error_mesage(response)
+   error_data = {
+      message: response.body,
+      code: response.code
+    }
+  raise GalacticCommerceError.new(error_data)
+ end
 end

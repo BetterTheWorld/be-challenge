@@ -1,3 +1,7 @@
+### Notes
+
+`a98b535d-afa1-44ef-91fe-b1e8bc09de53` for json report is duplicated
+
 ### Galactic Comerce Corp Integration
 
 - Make a call to the external API to create an organization and obtain a token for authentication.
@@ -54,4 +58,5 @@ The objective of this challenge is to process as many transaction reports as pos
 10. You may use `irb` and `require './app.rb'` to have a working console with the application loaded.
 
 ### Notes
+
 - Intent: An `Intent` is a user initiated interaction with an online store, like a person walking into a store, but not making any purchase yet. And if an `Intent` is walking into the store, a `Transaction` is a purchase. The intent's ID is what is passed to the vendors to track that the 'shopping trip', and any resulting sales, came form FlipGive.
